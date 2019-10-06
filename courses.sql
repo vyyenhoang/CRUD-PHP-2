@@ -1,0 +1,11 @@
+CREATE TABLE courses (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+city VARCHAR(100) NOT NULL,
+date DATETIME NOT NULL,
+location TEXT,
+course_type VARCHAR(20) NOT NULL);
+CREATE TABLE course_types (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+course_type VARCHAR(20) NOT NULL);
+INSERT INTO course_types (course_type) VALUES
+('PHP'), ('HTML'), ('CSS'), ('JavaScript');
